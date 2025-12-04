@@ -9,11 +9,11 @@
  * 5. image         -> assign it a value of a url of your image or ant image that represents you online
  */
 
-let fullName: string;
-let yearOfBirth: number;
-let hobby: string;
-let funFact: string;
-let image: string;
+let fullName: string = "maali aldaihani";
+let yearOfBirth: number = 1997;
+let hobby: string = "reading";
+let funFact: string = "I love to paint";
+let image: string = "https://www.popsci.com/wp-content/uploads/2025/06/how_do_clouds_get_their_shapes.jpg?quality=85";
 
 /**
  * Part 2: String Interpolation
@@ -25,29 +25,34 @@ let image: string;
  * 3. hobbyString         -> assign it: "My hobby is {YOUR_HOBBY}""
  */
 
-let fullNameString: string;
-let ageString: string;
-let hobbyString: string;
+let fullNameString: string = `My name is ${fullName}`;
+let ageString: string = `I am ${2025 - yearOfBirth}`;
+let hobbyString: string = `My hobby is ${hobby}`;
+
 
 /**
  * Part 3: Re-assignment
  * Increment your hacker score
  * */
 
-let hackerScore = 0;
-
+let hackerScore: number = 100;
+hackerScore += 1;
 function incrementBy1() {
   // Increment hackerScore by 1 👇🏻
+  hackerScore = hackerScore + 1;
 }
 function decrementBy1() {
   // decrement hackerScore by 1 👇🏻
+  hackerScore = hackerScore - 1;
 }
 
 function incrementBy2() {
   // Increment hackerScore by 2 👇🏻
+  hackerScore = hackerScore + 2;
 }
 function decrementBy2() {
   // decrement hackerScore by 2 👇🏻
+  hackerScore = hackerScore - 2;
 }
 
 // Ignore this part (:
